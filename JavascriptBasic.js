@@ -32,6 +32,28 @@ console.log(typeof(x));
 
 console.log(typeof(NAN))
 
+//type coercion
+console.log('1'+1);
+console.log('1'-1);
+console.log('1'>0);
+
+//Note - all the falsy values in JS return false. Value like null, 0, "", undefined
+var x = -2;
+if(x){
+    console.log('True');
+}else{
+    console.log('False');
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
