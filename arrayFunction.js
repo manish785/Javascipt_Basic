@@ -90,6 +90,52 @@ arrx.forEach(print); //we basicall pass the function , we try to do on the array
 //operation we want to do on the array elements 
 
 
+var arr = new Array(); //
+console.log(arr.length);
+console.log(arr[0]);
+
+var arr1 = new Array(1);
+console.log(arr1.length);
+console.log(arr1[0]);
+
+var arr2 = new Array(2,3);
+console.log(arr2.length);
+console.log(arr2[1]);
+
+
+var arrx = [1, 2, 3, 4, 5];
+
+function print(element){   //this will print the value of the array element
+    console.log(element);
+}
+
+arrx.forEach(print); // It will iterate over all the elements of the array 
+
+
+var arry = [1, 2, 3, 4, 5];
+
+var sum = 0;
+function calculateSum(element){
+    sum = sum + element;
+}
+
+arry.forEach(calculateSum); 
+console.log(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
