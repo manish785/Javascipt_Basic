@@ -66,6 +66,53 @@ function ask1(){
 
 ask1();
 
+// Constructors 
+function Student(name, rollNo, marks){
+    this.name = name;
+    this.rollNo = rollNo;
+    this.marks = marks;
+}
+
+var student1 = new Student("abcd", 15, 78);
+console.log(student1);
+
+var student2 = new Student("manish", 15, 78);
+//var student2 = Student("manish", 15, 78);
+console.log(student2);
+
+
+// Example
+function Vehicle(numWheels, price){
+    this.numWheels = numWheels;
+    this.price = price;
+    this.getPrice = function(){
+        return this.price;
+    }
+}
+
+var vechile1 = new Vehicle(2, 50000);
+console.log(vechile1.getPrice());
+var vechile2 = new Vehicle(20, 500000);
+console.log(vechile2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
