@@ -44,6 +44,16 @@ ask.apply(john);  //other way to call ask function
 
 
 
+const billy = {
+    name: "Billy Jol", 
+    outer: function() {
+         function inner(){
+         console.log(this);
+       }     
+       inner();
+    }
+  }
+  billy.outer();
 
 
 

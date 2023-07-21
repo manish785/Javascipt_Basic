@@ -1,6 +1,7 @@
 // var a = "A";
 // console.log(parseInt(a));
 // console.log(65-parseInt(a));
+// console.log(1.1);
 
 // console.log(1 + '1');
 // console.log(1 - '1');
@@ -125,22 +126,55 @@
 // army[5]();
 
 
-console.log((function(x, f = () => x) {
-  console.log(x);
-  var x;
-  var y = x;
-  console.log(y);
-  x = 2;
-  return [x, y, f()];
-})(1));
+// console.log((function(x, f = () => x) {
+//   console.log(x);
+//   var x;
+//   var y = x;
+//   console.log(y);
+//   x = 2;
+//   return [x, y, f()];
+// })(1));
 
-var juliet = {
-  name: "Juliet",
-  hello: function(){
-      console.log("Hi, I am " + this.name);
-  }
+// var juliet = {
+//   name: "Juliet",
+//   hello: function(){
+//       console.log("Hi, I am " + this.name);
+//   }
+// }
+// juliet.hello();
+
+
+// function MyClass() {}
+
+// const obj1 = new MyClass();
+// const obj2 = MyClass();
+
+// console.log(obj1);
+// console.log(obj2);
+
+
+function greet(name, callback){
+    console.log(`Hello ${name}`);
+    callback();
 }
-juliet.hello();
+function callback(){
+    console.log('Hi, I am a callback');
+}
+
+greet('manish', callback);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

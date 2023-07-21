@@ -130,17 +130,174 @@
   // }
 
 
-  async function x() {
-    try{
-      await Promise.reject("Rejected!!")
-    } catch(e) {
-      console.log(e)
-    }
-  }
-x();
+//   async function x() {
+//     try{
+//       await Promise.reject("Rejected!!")
+//     } catch(e) {
+//       console.log(e)
+//     }
+//   }
+// x();
 // promises.then(()=>{
 
 // }),azz
+
+
+
+// const promise1 = new Promise(resolve => resolve('Promise 1'));
+
+// const promise2 = promise1.then(result => {
+//   throw new Error('Error in promise2');
+// });
+
+// promise2
+//   .then(result => console.log(result))
+//   .catch(error => console.error(error));
+
+
+  // const promise = new Promise((resolve, reject) => {
+  //   resolve('Promise resolved!');
+  // });
+  
+  // promise
+  //   .then(result => {
+  //     throw new Error('Error in then()');
+  //   })
+  //   .catch(error => console.error(error))
+  //   .finally(() => console.log('Finally executed!'));
+  
+
+    // function asyncOperation() {
+    //   return new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //       resolve('Resolved!');
+    //     }, 2000);
+    //   });
+    // }
+    
+    // async function performAsyncOperation() {
+    //   try {
+    //     const result = await asyncOperation();
+    //     console.log(result);
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // }
+    
+   // performAsyncOperation();
+    
+
+  //  Promise.resolve('First')
+  //  .then(result => {
+  //    console.log(result);
+  //    return Promise.reject('Error');
+  //  })
+  //  .catch(error => {
+  //    console.error(error);
+  //    return 'Caught';
+  //  })
+  //  .then(result => console.log(result));
+ 
+
+
+
+  // function outerFunction() {
+  //   const outerVariable = 'Outer';
+  
+  //   function innerFunction() {
+  //     console.log(outerVariable);
+  //   }
+  
+  //   return innerFunction;
+  // }
+  
+  // const closure = outerFunction();
+  // closure();
+  
+
+
+  // function outerFunction() {
+  //   let counter = 0;
+  
+  //   function incrementCounter() {
+  //     counter++;
+  //     console.log(counter);
+  //   }
+  
+  //   return incrementCounter;
+  // }
+  
+  // const closure1 = outerFunction();
+  // const closure2 = outerFunction();
+  
+  // closure1();
+  // closure1();
+  // closure2();
+
+
+  // function outerFunction() {
+  //   const outerVariable = 'Outer';
+  
+  //   function innerFunction() {
+  //     const innerVariable = 'Inner';
+  //     console.log(outerVariable + ' ' + innerVariable);
+  //   }
+  
+  //   outerVariable = 'New Outer';
+  
+  //   return innerFunction;
+  // }
+  
+  // const closure = outerFunction();
+  // closure();
+
+
+  // function outerFunction() {
+  //   const array = [];
+  
+  //   for (var i = 0; i < 3; i++) {
+  //     array.push(function() {
+  //       console.log(i);
+  //     });
+  //   }
+  
+  //   return array;
+  // }
+  
+  // const closures = outerFunction();
+  // closures[0]();
+  // closures[1]();
+  // closures[2]();
+  
+
+
+  function outerFunction() {
+    const outerVariable = 'Outer';
+  
+    return function(innerVariable) {
+      console.log(outerVariable + ' ' + innerVariable);
+    };
+  }
+  
+  const closure = outerFunction();
+  closure('Inner');
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
 
 
 
