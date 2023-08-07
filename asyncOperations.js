@@ -20,15 +20,59 @@
 // })
 
 
-function greet(name, callback){
-    console.log(name);
-    callback();
-}
+// function greet(name, callback){
+//     console.log(name);
+//     callback();
+// }
 
-function callback(){
-    console.log('Here, I am invoking the callback function');
-    return;
-}
+// function callback(){
+//     console.log('Here, I am invoking the callback function');
+//     return;
+// }
 
 
-greet ('Manish', callback);
+// greet ('Manish', callback);
+
+
+// const promise1 = new Promise((resolve) => {
+//     setTimeout(() => resolve('A'), 1000);
+//   });
+  
+//   const promise2 = new Promise((resolve) => {
+//     setTimeout(() => resolve('B'), 500);
+//   });
+  
+//   Promise.race([promise1, promise2]).then((result) => {
+//     console.log(result);
+//   });
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
