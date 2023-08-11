@@ -23,3 +23,18 @@ async  function fetchData() {
 
 fetchData();
   
+
+// example of Callbak hell 
+aysnc_A(function(){
+  async_B(function(){
+    async_C(function(){
+
+    })
+  })
+})
+
+
+
+
+
+
