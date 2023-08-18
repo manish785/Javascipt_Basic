@@ -28,6 +28,7 @@ console.log(watch);
 console.log(watch.getName());
 console.log(watch.getQty());
 
+// here function chaining is not possible because we are not returning "this" object here...
 // console.log(mobile.getName().getQty()); // mobile.getName() is returning undefine, we are calling function on undefined
 
 

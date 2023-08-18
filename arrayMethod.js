@@ -31,17 +31,20 @@ const teams = ['CKS', 'MI', 'RCB', 'PNB'];
 
 // concat 
 
-const teams2 = [
-    'India',
-    'AUS',
-    'sri'
-];
+// const teams2 = [
+//     'India',
+//     'AUS',
+//     'sri'
+// ];
 
-const mergedTeams = teams2.concat(teams);
-console.log(mergedTeams);
+// const mergedTeams = teams2.concat(teams);
+// console.log(mergedTeams);
 
 
-
+const arr = [1, 2, 3, 4];
+const arr1 = arr.slice(1); // 2, 3, 4
+console.log(arr1); // 
+console.log(arr);
 
 
 
